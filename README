@@ -1,0 +1,16 @@
+A small C program to solve sudoku puzzles.  
+
+Tests and optimizations have not been done yet, those are the next steps. Some small tests for the bitwise vector creations would be the first.
+
+Optimize:
+    - checking if a puzzle is solved on every iteration of inserting a number
+    - instead of randomly selecting a number, randomly select a number that hasn't been used
+    - remove resorting to the original puzzle if at all possible
+
+compiling:
+    $ make
+
+running: bin/solver tests/input.sudoku
+
+use a command line argument that is the text file of numbers seperated by spaces (9x9).
+
